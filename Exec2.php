@@ -1,5 +1,6 @@
 <?php
     $name = "Laurinha";
+    $soma = 0;
 
 ?>
 
@@ -11,29 +12,36 @@
     <body>  
         <h1>Bem vindo, <?php print($name); ?> maravilhosa, linda, MIAU!</h1>
 
+        <h4>Vamor realizar a soma de 10 números</h4>
+        <br><br>
 
-        <form method="POST">
+        <form method = "POST">
             <?php 
-            // Loop para criar 5 inputs numericos
-            for ($i = 1; $i <= 5; $i++) {
-                echo "Digite o número $i: <input type='number' name='num$i' required><br><br>";
-            }
+                for($i = 1; $i <= 10; $i ++){
+                    
+                    $valor = isset($_POST["num$i"]) ? $_POST["num$i"] : "";
+                    echo "Digite um valor: 
+                            <input type = 'number' name = 'num$i' required value = '$valor'><br><br>";
+
+                }
             ?>
-            <button type="submit">Enviar</button>
+               
+            <button type = "submit">Somar</button>
         </form>
 
         <?php
-            // Só executa quando o usuário clicar em "Enviar"
-            if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                echo "<h3>Os números digitados foram:</h3>";
+            if($_SERVER["REQUEST_METHOD"] === "POST"){
+                
+                for($j = 1; $j <= 10; $j ++){
 
-                // Loop para ler e mostrar os 5 números digitados
-                for ($i = 1; $i <= 5; $i++) {
-                    $valor = $_POST["num$i"];  // Pega o valor de cada input
-                    echo "Número $i: $valor <br>";
+                    $soma = $soma + $_POST["num$j"];
+
                 }
+                
+                echo "<br>Resultado da soma = $soma ";
             }
         ?>
+
 
     </body>
 </html>
