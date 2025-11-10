@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Exercicios PHP</title>
+        <title>Exercicios 1</title>
     </head>
 
     <style>

@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <tilte>Exercicios PHP</title>
+        <title>Exercicios 2</title>
     </head>
 
     <body>  
