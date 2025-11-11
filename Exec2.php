@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <title>Exercicios 2</title>
+        <title>Exercicio 2</title>
     </head>
 
     <body>  

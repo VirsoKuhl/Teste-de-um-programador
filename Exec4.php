@@ -9,7 +9,7 @@
 <!DOCTYPE = hmtl>
 <html lang = "pt-br"> 
     <head>
-        <title>Exercicios 4</title>
+        <title>Exercicio 4</title>
     </head>
 
     <style>

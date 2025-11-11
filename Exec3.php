@@ -8,7 +8,7 @@
 <!DOCTYPE = html>
 <html lang = "pt-br">
     <head>
-        <title>Exercicios 3</title>
+        <title>Exercicio 3</title>
     </head>
 
     <body>

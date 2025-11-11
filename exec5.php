@@ -20,25 +20,25 @@ $teste = array("Virso", "Guijermo", "Laurinhas", "Lucas");
         }
         echo "]<br><br>";
 
-        // reset()
+        
         $valor = reset($teste);
         echo "<strong>reset():</strong> o ponteiro volta para o início<br>";
         echo "Elemento atual: $valor<br>";
         echo "Índice atual: " . key($teste) . "<br><br>";
 
-        // next()
+        
         next($teste);
         echo "<strong>next():</strong> avança o ponteiro<br>";
         echo "Elemento atual: " . current($teste) . "<br>";
         echo "Índice atual: " . key($teste) . "<br><br>";
 
-        // mais um next()
+        
         next($teste);
         echo "<strong>next() novamente:</strong><br>";
         echo "Elemento atual: " . current($teste) . "<br>";
         echo "Índice atual: " . key($teste) . "<br><br>";
 
-        // reset novamente
+        
         reset($teste);
         echo "<strong>reset() novamente:</strong> volta ao início<br>";
         echo "Elemento atual: " . current($teste) . "<br>";
