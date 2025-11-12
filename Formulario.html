@@ -1,14 +1,20 @@
 <!DOCTYPE = html>
 <html lang = "pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Formulario Exemplo</title>
 </head>
+
+<style>
+     form {
+      margin: 50px auto; /* centraliza horizontalmente */
+    }
+</style>
 
 <body>
     <h3>Cadastro do Usuário</h3>
 
     <p>* Dados Obrigatórios </p>
-    <br>
 
     <form method = "POST" action = "Formulario_teste.php">
 
@@ -17,19 +23,19 @@
         <br><br>
 
         <label>E-mail: * </label>
-        <input type = "email" name = "email" placeholder = "Digite seu e-mail..." >
+        <input type = "text" name = "email" placeholder = "Digite seu e-mail..." >
         <br><br>
 
         <label>Data de Nascimento: * </label>
-        <input type = "date" name = "nasc" placeholder = "dd/mm/aaaa">
+        <input type = "text" name = "nasc" placeholder = "dd/mm/aaaa">
         <br><br>
 
         <label>Telefone: * </label>
-        <input type = "tel" name = "tel" placeholder = "(47) 9999-9999">
+        <input type = "text" name = "tel" placeholder = "(47) 9999-9999">
         <br><br>
 
         <label>URL página pessoal: </label>
-        <input type = "url" name = "url">   
+        <input type = "text" name = "url">   
         <br><br>
 
         <label>Estado onde reside: </label>
