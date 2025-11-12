@@ -13,6 +13,17 @@
         <h3>Vamor realizar uma pesquisa de valores inteiros em um vetor</h3>
 
         <?php
-            foreach ($vetor as $busca){
-                if ($busca ==  )
+             echo "[ ";
+            foreach ($vetor as $valor) {
+                echo "$valor ";
             }
+            echo "]<br><br>";
+            
+            foreach ($vetor as $indice => $valor) {
+                if ($valor == 3) {
+                    echo "Encontrei o número que procura!<br>Ele está no índice $indice.";
+                }
+            }     
+        ?>
+    </body> 
+</html>
