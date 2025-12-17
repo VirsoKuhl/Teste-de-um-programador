@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cadastro</title>
-    </head>
-    <body>
-        <form method="POST">
-            Nome: <input type = "text" name = "nome" placeholder="Nome Completo">
-            Endereço: <input type = "text" name = "endereco" placeholder="Rua, 999">
-            E-mail: <input type = "email" name = "email" placeholder="usuário@gmail.com">
-        </form>
-    </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+
+<form method="post">
+    <fieldset style="width: 800px;">
+        <legend>Cadastre-se</legend>
+
+        <p>
+            Nome
+            <input type="text" name="nome" size="60" maxlength="60">
+        </p>
+
+        <p>
+            Endereço
+            <input type="text" name="ender" size="60" maxlength="50">
+        </p>
+
+        <p>
+            E-mail
+            <input type="email" name="email" size="60" maxlength="50">
+        </p>
+
+        <p>
+            Gênero
+            <input type="radio" name="genero" value="masculino" checked> masculino
+            <br>
+            <input type="radio" name="genero" value="feminino"> feminino
+        </p>
+
+        <p>
+            Hobbies
+            <br>
+            <input type="checkbox" name="hobbies[]" value="pescar"> pescar
+            <br>
+            <input type="checkbox" name="hobbies[]" value="dormir"> dormir
+            <br>
+            <input type="checkbox" name="hobbies[]" value="estudar"> estudar
+            <br>
+            <input type="checkbox" name="hobbies[]" value="namorar"> namorar
+        </p>
+
+        <p>
+            Sugestões
+            <br>
+            <textarea name="sugest" cols="20" rows="5"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </fieldset>
+</form>
+
+</body>
 </html>
